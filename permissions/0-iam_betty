@@ -1,2 +1,2 @@
-#!/bin/bash​
-groups
+#!/bin/bash
+su betty
