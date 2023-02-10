@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-#read and cut stuff
+# This script displays the content of the file /etc/passwd.
 
-while read name
+
+while IFS=: read -r user    
 do
-	    echo "$name" | cut -d":" -f1,3,6
-    done < /etc/passwd
+           echo "$user" | cut -f 1,3,6 -d ':'    
+    done < "/etc/passwd"
