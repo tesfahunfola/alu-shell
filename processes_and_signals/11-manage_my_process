@@ -1,6 +1,5 @@
-#!/usr/bin/env bash
-#manage my process
-
+#!/usr/bin/env bash                                                                                                             
+# Best school 10 times using while loop 
 file=/var/run/my_process.pid
 if [ "$1" == "start" ];
 then
